@@ -1,3 +1,9 @@
 <app-server></app-server>
 <app-server></app-server>
 <app-new-components></app-new-components>
+<button [disabled]="allowNewServer"
+        (click)="onCreativeServer()">Add Server</button>
+<p>{{serverCreationStatus}}</p>
+<label>Input text here</label>
+<input type="text" [(ngModel)]="serverName">
+<!--<p>{{serverName}}</p>-->
